@@ -18,6 +18,7 @@ def read_csv(csv_path):
 
 # src/data_processing.py
 
+
 from svgpathtools import svg2paths
 
 def read_svg(svg_path):
