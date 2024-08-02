@@ -1,0 +1,38 @@
+Workflow Steps
+
+
+1. Read Input Data
+
+Implement functions to read SVG and CSV files from the testCases folder.
+For CSV files, use the read_csv function you've developed to extract polyline data.
+
+
+
+2. Process Each Test Case
+
+For each test case (input file) in testCases, perform the following:
+Curve Fitting: Apply cubic Bezier curve fitting on the polylines extracted from the input data.
+Regularization: Apply regularization rules to make the shapes more geometrically regular.
+Symmetry Detection: Check for symmetries in the shapes and mark them accordingly.
+Shape Completion: If any shapes are incomplete due to occlusion, attempt to complete them.
+
+
+
+3. Generate Output
+
+Convert the processed curves back to SVG format, using cubic Bezier curves for smoother representation.
+Save the processed paths as CSV files for easy analysis and verification.
+
+
+
+4. Save Results
+
+Save the generated SVG files in the output folder with corresponding filenames to the input files.
+Save any additional output data, such as processed CSV files or visualizations, in the output folder.
+
+
+
+5.Validation and Testing
+
+Compare the output files with expected results, if available. Use automated tests to ensure the accuracy of the output.
+Visualize the results to manually verify the correctness of the curve fitting and regularization.
